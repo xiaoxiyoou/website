@@ -1,0 +1,313 @@
+html {
+    font: 600 15px/20px 'Microsoft YaHei';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1080px;
+}
+
+/* 轮播 */
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-img {
+    width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background: #c4a064;
+}
+
+/* 导航栏 */
+
+
+.header {
+    position: absolute;
+}
+
+.header-top {
+    width: 1079px;
+    margin: 10px auto 0 auto;
+    position: relative;
+}
+
+#nav {
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: inline-block;
+    margin: 100px auto 0;
+}
+
+.MenuIndex {
+    position: absolute;
+    width: 1080px;
+    margin-top: 200px;
+    z-index: 5;
+    margin-bottom: -30px !important;
+}
+
+.MenuIndex li {
+    float: left;
+    _display: inline;
+    line-height: 20px;
+    position: relative;
+    /* width: 95px; */
+    text-align: center;
+    height: 38px;
+    margin: 0 20px;
+}
+.MenuIndexHover{
+    color: #c4a064!important;
+    border-bottom: 2px solid #c4a064;
+}
+.MenuIndex li a.MenuIndex-title {
+    font: 600 15px/20px 'Microsoft YaHei';
+    color: #ffffff;
+    display: block;
+    height: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    float: left;
+    margin-top: -106px;
+}
+
+.search {
+    position: relative;
+    left: -15px;
+    width: 19px;
+    float: left;
+    height: 19px;
+}
+
+/* 品牌 */
+.brand-wrapper {
+    margin-top: 80px;
+}
+
+.brand-wrapper>.brand-title {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.brand-wrapper>.brand-title>.name {
+    font-size: 28px;
+    color: #2c3e4e;
+    margin: 0 6px;
+}
+
+
+.line {
+    text-align: center;
+    color: #999999;
+    font-size: 18px;
+}
+
+.brand-wrapper>.content {
+    margin-top: 4%;
+    margin-bottom: 10%;
+
+}
+
+.brand-wrapper>.content>.item {
+    width: 23%;
+
+}
+
+.brand-wrapper>.content>.item>.brandImg {
+    width: 100%;
+
+}
+
+.brand-wrapper>.content>.item>.name {
+    color: #212121;
+    font-size: 19px;
+    width: 100%;
+    padding: 2% 5% 0;
+    white-space: nowrap;
+
+}
+
+.brand-wrapper>.content>.item>.des {
+    color: #666666;
+    font-size: 14px;
+    margin: 2% 5%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+
+
+}
+
+.brand-wrapper>.content>.item>.more {
+    color: #ffffff;
+    font-size: 14px;
+    width: 148px;
+    height: 35px;
+    background-color: #c4a064;
+    border-radius: 16px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+
+}
+
+/* 社会责任 */
+.sociology-wrapper {
+    width: 100%;
+    position: relative;
+    background: url(./../img/index/bg.png);
+    background-size: 100% 100%;
+    padding-bottom: 5%;
+    margin-top: 30px;
+}
+
+.sociology-wrapper>.sociology-title {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.sociology-wrapper>.sociology-title>.name {
+    font-size: 28px;
+    color: #ffffff;
+    margin: 0 6px;
+}
+
+.sociology-wrapper>.content {
+    margin-top: 5%;
+}
+
+.sociology-wrapper>.content>.sociologyImg {
+    margin: 0 2.5%;
+    width: 9%;
+}
+
+.socialline {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* 新闻中心 */
+.news-wrapper {
+    margin-bottom: 100px;
+}
+
+.news-wrapper>.news-title {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.news-wrapper>.news-title>.name {
+    font-size: 28px;
+    color: #2c3e4e;
+    margin: 0 6px;
+}
+
+.news-wrapper>.content {
+    margin: 50px auto 0;
+    width: 80%;
+    height: 100%;
+}
+
+.news-wrapper>.content>.text {
+    height: 382px;
+    margin-left: 3%;
+}
+
+.news-wrapper>.content>.newsBanner {
+    height: 382px;
+    margin-right: 1%;
+    max-width: 60%;
+}
+
+.news-wrapper>.content>.text>.more {
+    color: #ffffff;
+    font-size: 14px;
+    width: 148px;
+    height: 35px;
+    background-color: #c4a064;
+    border-radius: 16px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.news-wrapper>.content>.text>.item>.title {
+    font-size: 20px;
+}
+
+.news-wrapper>.content>.text>.item>.des {
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: " ";
+}
+
+/* 底部 */
+.footer-wrapper {
+    width: 100%;
+    background: #c4a064;
+    border-top: 1px solid #ddd;
+    margin-top: 70px;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+.footer-mian {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.footer_firstList {
+    display: inline-block;
+    vertical-align: text-top;
+    margin-left: 15px;
+}
+
+.footer_firstList>.title {
+    border-right: 2px solid #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 5px;
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+
+
+.footer_firstList>.item {
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.qrCode {
+    position: absolute;
+    z-index: 1;
+    right: 11%;
+    top: 25%;
+    width: 100px;
+
+}
