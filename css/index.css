@@ -1,12 +1,4 @@
-html {
-    font: 600 15px/20px 'Microsoft YaHei';
-}
 
-body {
-    margin: 0;
-    padding: 0;
-    min-width: 1080px;
-}
 
 /* 轮播 */
 .swiper-container {

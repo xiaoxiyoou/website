@@ -1,0 +1,107 @@
+/* 品牌 */
+.top{
+    border-bottom: 2px solid #e6e6e6;
+    width: 40%;
+}
+
+
+.brand-wrapper>.brand-title {
+    margin: 0 auto;
+}
+
+.brand-title>.name {
+    font-size: 28px;
+    color: #2c3e4e;
+    margin: 0 6px;
+}
+
+.line {
+    text-align: center;
+    color: #999999;
+    font-size: 18px;
+}
+/* 集团介绍 */
+
+.intro{
+    width: 80%;
+}
+.bg1{
+    width: 1080px;
+}
+.intro-text{
+    background-color: #ebebe9;
+    width: 1080px;
+    padding:0 5%;
+    padding-bottom: 2%;
+}
+.introEglish{
+    color: #888886;
+    font-size: 23px;
+    margin-top: 2%;
+}
+.intro-title{
+    width: 365px;
+    height: 75px;
+    border:2px solid #888886;
+    color: #2c3d4e;
+    font-size: 34px;
+    margin-top: 2%;
+}
+.intro-word{
+    margin-top: 2%;
+    text-indent: 36px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.busi-wrapper{
+    width: 1080px;
+
+}
+.busi-left{
+    width: 50%;
+    padding: 2% ;
+}
+.busiEglish{
+    color: #888886;
+    font-size: 23px;
+    margin-top: 2%;
+}
+.busi-title{
+    width: 365px;
+    height: 75px;
+    border:2px solid #888886;
+    color: #2c3d4e;
+    font-size: 34px;
+    margin-top: 2%;
+}
+.busi-word{
+    margin-top: 2%;
+    text-indent: 36px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.person1{
+    width: 1080px;
+}
+.personName{
+    font-size: 17px;
+}
+.personName>span{
+    font-size: 30px;
+}
+.personTitle{
+    margin-top: 5%;
+    font-size: 30px;
+}
+.personCon{
+    margin-top: 5%;
+    border: 1px solid #888886;
+    font-size: 18px;
+
+}
+.rightImg{
+    width: 50%;
+}
+.btm-text{
+    width: 1080px;
+}

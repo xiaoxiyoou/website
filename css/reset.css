@@ -1,5 +1,13 @@
 @charset "UTF-8";
+html {
+  font: 600 15px/20px 'Microsoft YaHei';
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1080px;
+}
 html {
   background-color: rgb(245, 245, 245);
   font-size: 100px;
