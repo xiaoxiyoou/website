@@ -1,0 +1,26 @@
+.position-wrap{
+    width: 1200px;
+    margin-bottom: 100px;
+}
+.position-list{
+    width: 50%;
+}
+.position-list>.EnglishName{
+    color: #888886;
+    font-size: 20px;
+    margin-top: 103px;
+}
+.position-list>.title{
+    width: 365px;
+    height: 75px;
+    border: 2px solid #888886;
+    color: #2c3d4e;
+    font-size: 20px;
+    margin-top: 35px;
+}
+.position-list>.des{
+    width: 257px;
+    font-size: 14px;
+    line-height: 32px;
+    margin-top: 75px;
+}

@@ -1,12 +1,13 @@
 @charset "UTF-8";
 html {
-  font: 600 15px/20px 'Microsoft YaHei';
 }
 
 body {
   margin: 0;
   padding: 0;
-  min-width: 1080px;
+  min-width: 1200px;
+  line-height: 1.5;
+  font-family: Arial, "Microsoft YaHei", Verdana;
 }
 html {
   background-color: rgb(245, 245, 245);

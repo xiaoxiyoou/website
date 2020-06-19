@@ -1,0 +1,60 @@
+/* 底部 */
+.footer-wrapper {
+    width: 100%;
+    background: #c4a064;
+    border-top: 1px solid #ddd;
+    padding: 40px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-mian {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_firstList {
+    display: inline-block;
+    vertical-align: text-top;
+    margin-left: 15px;
+}
+
+.footer_firstList>.title {
+    border-right: 2px solid #ffffff;
+    font-size: 17px;
+    line-height: 17px;
+    width: 110px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+.footer_firstList>.item {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.footer-mian>.qrCode {
+    position: absolute;
+    z-index: 1;
+    right:3%;
+    top: 25%;
+    width: 100px;
+
+}
+.footer-wrapper>.tipImg{
+    width: 310px;
+    margin: 95px auto 8px;
+    display: block;
+
+}
+.footer-wrapper>.tip{
+    margin: 0 auto;
+    display: block;
+
+}

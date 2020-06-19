@@ -1,60 +1,40 @@
-/* 品牌 */
-.top{
-    border-bottom: 2px solid #e6e6e6;
-    width: 40%;
-}
 
 
-.brand-wrapper>.brand-title {
-    margin: 0 auto;
-}
-
-.brand-title>.name {
-    font-size: 28px;
-    color: #2c3e4e;
-    margin: 0 6px;
-}
-
-.line {
-    text-align: center;
-    color: #999999;
-    font-size: 18px;
-}
 /* 集团介绍 */
 
 .intro{
-    width: 80%;
+    width: 1200px;
 }
 .bg1{
-    width: 1080px;
+    width: 100%;
 }
 .intro-text{
     background-color: #ebebe9;
-    width: 1080px;
+    width: 100%;
     padding:0 5%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
 }
 .introEglish{
     color: #888886;
-    font-size: 23px;
-    margin-top: 2%;
+    font-size: 20px;
+    margin-top: 3%;
 }
 .intro-title{
     width: 365px;
     height: 75px;
     border:2px solid #888886;
     color: #2c3d4e;
-    font-size: 34px;
-    margin-top: 2%;
+    font-size: 20px;
+    margin-top: 3%;
 }
 .intro-word{
-    margin-top: 2%;
+    margin-top: 3%;
     text-indent: 36px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 36px;
 }
 .busi-wrapper{
-    width: 1080px;
+    width: 100%;
 
 }
 .busi-left{
@@ -63,7 +43,7 @@
 }
 .busiEglish{
     color: #888886;
-    font-size: 23px;
+    font-size: 20px;
     margin-top: 2%;
 }
 .busi-title{
@@ -71,37 +51,77 @@
     height: 75px;
     border:2px solid #888886;
     color: #2c3d4e;
-    font-size: 34px;
-    margin-top: 2%;
+    font-size: 20px;
+    margin: 2% auto 3%;
 }
 .busi-word{
+    width: 100%;
     margin-top: 2%;
-    text-indent: 36px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 36px;
 }
 .person1{
-    width: 1080px;
+    width: 100%;
+    display: block;
 }
 .personName{
     font-size: 17px;
+    margin-top: 10%;
 }
 .personName>span{
-    font-size: 30px;
+    font-size: 20px;
 }
 .personTitle{
     margin-top: 5%;
-    font-size: 30px;
+    font-size: 20px;
 }
 .personCon{
-    margin-top: 5%;
+    padding: 3%;
+    margin-top: 17%;
     border: 1px solid #888886;
-    font-size: 18px;
+    font-size: 14px;
 
+}
+.personCon>.row{
+    line-height: 36px;
+}
+.personCon>.row>img{
+    margin-right: 7px;
+    margin-bottom: 2px;
 }
 .rightImg{
     width: 50%;
+    vertical-align:bottom;
+}
+
+.personCon2{
+    height: 100%;
+}
+
+.personCon2>.col>.title{
+    font-size: 20px;
+    color: #444444;
+    margin-bottom: 2%;
+
+}
+.personCon2>.col>.text{
+    font-size: 14px;
+    color: #444444;
+    line-height: 27px;
+
 }
 .btm-text{
-    width: 1080px;
+    margin :5% 2% 10%;
+}
+.btm-text>.title{
+    font-size: 20px;
+    color: #444444;
+    margin-top: 5%;
+    line-height: 27px;
+}
+.btm-text>.text{
+    font-size: 14px;
+    color: #444444;
+    line-height: 36px;
+
 }

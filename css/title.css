@@ -1,0 +1,140 @@
+
+/* 轮播 */
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-img {
+    width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background: #c4a064;
+}
+/* 导航栏 */
+
+
+.header {
+    position: absolute;
+}
+
+.header-top {
+    width: 1200px;
+    margin: 10px auto 0 auto;
+    position: relative;
+}
+
+#nav {
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: inline-block;
+    margin: 100px auto 0;
+}
+.MenuIndex-cont{
+    width: 100%;
+    min-width: 1140px;
+    background-color: #fff;
+    border-bottom: 1px solid #000000;
+}
+.MenuIndex-list{
+  
+    width: 100%;
+    background-color: #e6e6e6;
+    margin:  0 auto;
+    position: fixed;
+    height: 122px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+.MenuIndex {
+    background-color: #e6e6e6;
+    width: 1200px;
+    margin: 0px auto -30px;
+    z-index: 5;
+    height: 122px;
+}
+
+.MenuIndex li {
+    float: left;
+    _display: inline;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+    height: 38px;
+    margin: 0 25px;
+}
+.MenuIndexHover{
+    color: #c4a064!important;
+}
+.MenuIndex li a.MenuIndex-title {
+    color: #192548;
+    display: block;
+    height: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    margin-top: 56px;
+}
+
+.logo {
+    float: left;
+    margin-top: 11px;
+}
+
+.search {
+    position: relative;
+    left: 1px;
+    width: 19px;
+    float: left;
+    height: 19px;
+}
+/* 下拉栏 */
+.about-wrap{
+    visibility: hidden;
+    z-index: 1;
+    left: 10%;
+    top:122px
+}
+.about-item{
+    background-color: #c4a064;
+    width: 130px;
+    height: 38px;
+    font-size: 15px;
+}
+.about-item-hover{
+    background-color: #987130;
+}
+.about-item>a{
+    color: #ffffff;
+
+}
+.about-img{
+    width: 26px;
+    height: 13px;
+}
+/* 横栏样式 */
+/* 品牌 */
+.top{
+    border-bottom: 2px solid #e6e6e6;
+    width: 40%;
+}
+
+
+.brand-wrapper>.brand-title {
+    margin: 0 auto;
+}
+
+.brand-title>.name {
+    font-size: 20px;
+    color: #2c3e4e;
+    margin: 0 6px;
+}
+
+.line {
+    text-align: center;
+    color: #999999;
+    font-size: 16px;
+}

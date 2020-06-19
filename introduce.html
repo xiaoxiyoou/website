@@ -4,17 +4,70 @@
 <head>
   <meta charset="UTF-8" />
   <title>孝子部落</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/introduce.css" />
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/title.css" />
 
 </head>
 <!-- 关于我们 -->
 <div class="con col a-c">
-  <div class="row j-b a-c" style="width:100%">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img class="swiper-img" src="img/index/banner3.png" alt=""></div>
+      <div class="swiper-slide"><img class="swiper-img" src="img/index/banner2.png" alt=""></div>
+      <div class="swiper-slide"><img class="swiper-img" src="img/index/banner1.png" alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="MenuIndex-list">
+    <ul class="MenuIndex">
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="./index.html">HOME</a>
+      </li>
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title about MenuIndexHover" href="./introduce.html">关于我们</a>
+        <!-- 下拉栏 -->
+        <div class="about-wrap col j-c a-c">
+          <img class="about-img" src="img/title/triangle.png" alt="">
+          <div class="about-cont">
+            <div class="about-item row a-c j-c"><a href="./introduce.html">集团介绍</a></div>
+            <div class="about-item row a-c j-c"><a href="./introduce.html">团队介绍</a></div>
+            <div class="about-item row a-c j-c"><a href="./position.html">集团定位</a></div>
+            <div class="about-item row a-c j-c"><a href="./contact.html">联系我们</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">解决方案</a>
+      </li>
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">品牌产品</a>
+      </li>
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">服务体系</a>
+      </li>
+      <img class="logo" src="./img/introduce/LOGO.png">
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">新闻中心</a>
+      </li>
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">常见问题</a>
+      </li>
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">社会责任</a>
+      </li>
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">加入我们</a>
+      </li>
+    </ul>
+
+  </div>
+
+  <!-- 关于我们 -->
+  <div class="row j-b a-c" style="width:100%;margin:4% auto">
     <div class="top"></div>
     <div>
       <div class="brand-title row a-c j-b">
@@ -30,7 +83,7 @@
   <div class="intro col a-c j-c">
     <img class="bg1" src="./img/introduce/bg1.png" alt="">
     <div class="intro-text col a-c j-c">
-      <div class="introEglish">ABOUT US</div>
+      <div class="introEglish">GROUP TO INTRODUCE</div>
       <div class="intro-title row a-c j-c">集团介绍</div>
       <div class="intro-word">
         孝子部落集团为落实国家殡葬改革政策，弘扬传承中华优秀传统文化，提升殡葬行业服务品质，优化殡葬行业经营行为，历经19年经营总结沉淀，推出三维创新版块：产品创新、科技创新、教育创新；集团董事长吴帝伯先生于2019年提出新殡葬的概念即新零售、新服务、新科技、新文化、新供给
@@ -100,56 +153,57 @@
     <!--创始人介绍2  -->
     <div class="busi-wrapper row">
       <div class="busi-left col ">
-        <div class="">
-          <div class="">
-            <div>他是个孝子</div>
-            <div>为了不让母亲担心，他就戒烟。父母在不远游，他就在当地做生意，他说：“这世上最珍贵也是最重要的就是我的父母。”谈起父母，他总是心怀感激。+互联网”创新模式赋予爱的亲人尽孝服务平台创始人</div>
+        <div class="personCon2 col j-a">
+          <div class="col">
+            <div class="title">他是个孝子</div>
+            <div class="text">
+              为了不让母亲担心，他就戒烟。父母在不远游，他就在当地做生意，他说：“这世上最珍贵也是最重要的就是我的父母。”谈起父母，他总是心怀感激。+互联网”创新模式赋予爱的亲人尽孝服务平台创始人</div>
           </div>
-          <div class="">
-            <div>他是个孝子</div>
-            <div>中国首家殡葬行业商学院创始人</div>
+          <div class="col">
+            <div class="title">他是个好学生</div>
+            <div class="text">连续25年来，每年都会去看望自己的高中老师，同老师聊天，让老师深感安慰。</div>
           </div>
-          <div class="">
-            <div>他是个孝子</div>
-            <div>中国殡葬行业资深模式专家</div>
+          <div class="col">
+            <div class="title">他是个“才子”</div>
+            <div class="text">上知天文下知地理，传承中国文化，精通易学。爱好摄影，偶尔参赛；爱好钓鱼，满载箩筐；爱好演说，桃李遍天下。</div>
           </div>
-          <div class="">
-            <div>他是个孝子</div>
-            <div>中国首款家族宝风水盒创始人</div>
-          </div>
+
         </div>
       </div>
       <img class="rightImg" src="./img/introduce/people3.png" alt="">
     </div>
     <!-- 底部文字 -->
     <div class="btm-text">
-      <div class="">
+      <div class="title">
         他是殡葬行业创新引领者
       </div>
-      <div class="">
+      <div class="text">
         他曾经拜访过20余家日本的殡葬企业，20余家台湾的殡葬企业，10余家欧美的殡葬企业，深感殡葬行业与日本差距50余年，与台湾差距20余年，深知殡葬行业与殡葬人的冷暖，从此发宏愿：誓让殡葬行业成为受社会尊重的行业，帮助10万家企业业绩倍增，让中国的殡葬行业找回尊严，2016年，打造中国特色互联网尽孝服务平台——孝子部落，并打造中国首家殡葬行业商学院。2018年，创造了中国“殡葬+互联网”创新模式第一款亲情讣告软件。
       </div>
-      <div class="">
+      <div class="text">
         他开创了殡葬人根据地即孝子部落企业家商学院以教育为基础，推动行业升级，将传统的殡葬服务场所升级为孝道文化传播的体验基地。
       </div>
-      <div class="">
+      <div class="text">
         他是殡葬行业创新引领者，传承中国优秀文化，孕育与时俱进的时代文化和时代精神，不断超越。
       </div>
-      <div class="">
+      <div class="title">
         他是一名出色的商业导师
       </div>
-      <div class="">
+      <div class="text">
         他18年磨一剑，结合百业经验，理念，将世界500强企业都在用的商业模式——四费模式，转化并应用于殡葬行业，五大重拳出击。
       </div>
     </div>
   </div>
+  <iframe src="./footer.html" style="width: 100%;height: 466px; " scrolling="no"></iframe>
 </div>
 
 
 <body>
+  <script src="js/jquery-1.8.2.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/title.js"></script>
   <script>
-
+ 
   </script>
 </body>
 
