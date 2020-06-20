@@ -40,8 +40,8 @@
        $("#about").css('visibility', 'visible')
      })
      $(".about").mouseout(function () {
-      $("#about").css('visibility', 'hidden')
-    })
+       $("#about").css('visibility', 'hidden')
+     })
      $("#about").hover(
        function () {
          $(this).css("visibility", "visible");
@@ -55,8 +55,8 @@
        $("#solution").css('visibility', 'visible')
      })
      $(".solution").mouseout(function () {
-      $("#solution").css('visibility', 'hidden')
-    })
+       $("#solution").css('visibility', 'hidden')
+     })
      $("#solution").hover(
        function () {
          $(this).css("visibility", "visible");
@@ -65,6 +65,10 @@
          $(this).css("visibility", "hidden");
        }
      );
+     // 顶部导航栏滑动
+     $('body,html').animate({
+       scrollTop: $('#title').offset().top - 122 + "px"
+     }, 500);
 
 
 
