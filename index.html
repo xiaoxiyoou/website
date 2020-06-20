@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/reset.css" />
 </head>
+
 <body>
   <div class="con col a-c" id="top">
     <!-- 轮播 -->
@@ -31,7 +32,7 @@
         <a class="MenuIndex-title" href="./introduce.html">关于我们</a>
       </li>
       <li class="MenuIndex-goods-list">
-        <a class="MenuIndex-title" href="">解决方案</a>
+        <a class="MenuIndex-title" href="./funeral.html">解决方案</a>
       </li>
       <li class="MenuIndex-goods-list">
         <a class="MenuIndex-title" href="">品牌产品</a>
@@ -47,7 +48,7 @@
         <a class="MenuIndex-title" href="">常见问题</a>
       </li>
       <li class="MenuIndex-goods-list">
-        <a class="MenuIndex-title" href="">社会责任</a>
+        <a class="MenuIndex-title" href="#sociology">社会责任</a>
       </li>
       <li class="MenuIndex-goods-list">
         <a class="MenuIndex-title" href="">加入我们</a>
@@ -84,7 +85,7 @@
       </div>
     </div>
     <!-- 社会责任 -->
-    <div class="sociology-wrapper col j-a a-c">
+    <div class="sociology-wrapper col j-a a-c" id="sociology">
       <div class="sociology-title row a-c j-c">
         <img class="left" src="./img/index/left.png" alt="">
         <div class="name">社会责任</div>
@@ -92,11 +93,26 @@
       </div>
       <div class="socialline">social responsibility</div>
       <div class="content row a-c j-b">
-        <img class="sociologyImg modular1" src="img/index/modular1.png">
-        <img class="sociologyImg modular2" src="img/index/modular2.png">
-        <img class="sociologyImg modular3" src="img/index/modular3.png">
-        <img class="sociologyImg modular4" src="img/index/modular4.png">
-        <img class="sociologyImg modular5" src="img/index/modular5.png">
+        <div class="sociologyList col a-c">
+          <img class="sociologyImg modular1" src="img/index/modular1.png">
+          <div class="sociologyText Text1">公益</div>
+        </div>
+        <div class="sociologyList col a-c">
+          <img class="sociologyImg modular2" src="img/index/modular2.png">
+          <div class="sociologyText Text2">绿色</div>
+        </div>
+        <div class="sociologyList col a-c">
+          <img class="sociologyImg modular3" src="img/index/modular3.png">
+          <div class="sociologyText Text3">人文</div>
+        </div>
+        <div class="sociologyList col a-c">
+          <img class="sociologyImg modular4" src="img/index/modular4.png">
+          <div class="sociologyText Text4">文明</div>
+        </div>
+        <div class="sociologyList col a-c">
+          <img class="sociologyImg modular5" src="img/index/modular5.png">
+          <div class="sociologyText Text5">规范</div>
+        </div>
       </div>
     </div>
     <!-- 新闻中心 -->
@@ -164,33 +180,55 @@
       // 社会责任
       $(".modular1").mouseover(function () {
         $(this).attr("src", "img/index/modular1-hover.png");
+        $('.Text1').css("color", "#1a2549");
+
       });
       $(".modular1").mouseout(function () {
         $(this).attr("src", "img/index/modular1.png");
+        $('.Text1').css("color", "#ffffff");
       });
       $(".modular2").mouseover(function () {
         $(this).attr("src", "img/index/modular2-hover.png");
+        $('.Text2').css("color", "#1a2549");
       });
       $(".modular2").mouseout(function () {
         $(this).attr("src", "img/index/modular2.png");
+        $('.Text2').css("color", "#ffffff");
       });
       $(".modular3").mouseover(function () {
         $(this).attr("src", "img/index/modular3-hover.png");
+        $('.Text3').css("color", "#1a2549");
+
       });
       $(".modular3").mouseout(function () {
         $(this).attr("src", "img/index/modular3.png");
+        $('.Text3').css("color", "#ffffff");
       });
       $(".modular4").mouseover(function () {
         $(this).attr("src", "img/index/modular4-hover.png");
+        $('.Text4').css("color", "#1a2549");
       });
       $(".modular4").mouseout(function () {
         $(this).attr("src", "img/index/modular4.png");
+        $('.Text4').css("color", "#ffffff");
       });
       $(".modular5").mouseover(function () {
         $(this).attr("src", "img/index/modular5-hover.png");
+        $('.Text5').css("color", "#1a2549");
       });
       $(".modular5").mouseout(function () {
         $(this).attr("src", "img/index/modular5.png");
+        $('.Text5').css("color", "#ffffff");
+      });
+      // 社会责任
+
+      // 锚点动态效果
+      $('body').on('click', 'a ', function () {
+        $("html, body").animate({
+          scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, 500);
+        return false;
+
       });
     });
   </script>

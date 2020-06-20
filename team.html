@@ -3,18 +3,214 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>孝子部落</title>
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+  <title>团队介绍</title>
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/team.css" />
   <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/title.css" />
 </head>
 
 <body>
-  <script src="js/swiper.min.js"></script>
-  <script>
+  <!-- 内容部分 -->
+  <div class="con col a-c ">
+    <!-- 轮播公共部分 -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="swiper-img" src="img/index/banner3.png" alt=""></div>
+        <div class="swiper-slide"><img class="swiper-img" src="img/index/banner2.png" alt=""></div>
+        <div class="swiper-slide"><img class="swiper-img" src="img/index/banner1.png" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="MenuIndex-list">
+      <ul class="MenuIndex">
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="./index.html">HOME</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title about MenuIndexHover" href="./introduce.html">关于我们</a>
+          <!-- 下拉栏 -->
+          <div class="about-wrap col j-c a-c" id="about">
+            <img class="about-img" src="img/title/triangle.png" alt="">
+            <div class="about-cont">
+              <div class="about-item row a-c j-c"><a href="./introduce.html">集团介绍</a></div>
+              <div class="about-item row a-c j-c"><a href="./team.html">团队介绍</a></div>
+              <div class="about-item row a-c j-c"><a href="./position.html">集团定位</a></div>
+              <div class="about-item row a-c j-c"><a href="./contact.html">联系我们</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="MenuIndex-goods-list solution">
+          <a class="MenuIndex-title" href="">解决方案</a>
+          <!-- 下拉栏 -->
+          <div class="about-wrap col j-c a-c" id="solution">
+            <img class="about-img" src="img/title/triangle.png" alt="">
+            <div class="about-cont">
+              <div class="about-item row a-c j-c"><a href="">殡仪服务</a></div>
+              <div class="about-item row a-c j-c"><a href="./funeral.html">殡仪馆</a></div>
+              <div class="about-item row a-c j-c"><a href="">陵园墓园</a></div>
+              <div class="about-item row a-c j-c"><a href="">生产厂家</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="">品牌产品</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="">服务体系</a>
+        </li>
+        <img class="logo" src="./img/introduce/LOGO.png">
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="">新闻中心</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="">常见问题</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="">社会责任</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="">加入我们</a>
+        </li>
+      </ul>
+    </div>
+    <!-- 关于我们 -->
+    <div class="row j-b a-c" style="width:100%;margin:4% auto">
+      <div class="top"></div>
+      <div>
+        <div class="brand-title row a-c j-b">
+          <img class="left" src="./img/index/left1.png" alt="">
+          <div class="name">关于我们</div>
+          <img class="right" src="./img/index/right1.png" alt="">
+        </div>
+        <div class="line">About Us</div>
+      </div>
+      <div class="top"></div>
+    </div>
+    <!-- 内容部分 -->
+    <div class="team-wrap">
+      <div class="team-cont col a-c">
+        <div class="EnglishName" style=" margin-top: 40px;">
+          TEAM
+        </div>
+        <div class="title row a-c j-c">
+          团队介绍
+        </div>
+        <div class="team-list row j-a f-w">
+          <div class="team-item col  a-c">
+            <img class="" src="img/team/person1.png" alt="">
+            <div class="name">吴京生</div>
+            <div class="des">临终关怀资深专家、石家庄市殡葬协会副会长、百年家
+              事董事长、孝子部落生命文化学院智库导师</div>
+          </div>
+          <div class="team-item col  a-c">
+            <img class="" src="img/team/person2.png" alt="">
+            <div class="name">刘福龙</div>
+            <div class="des">殡葬文化资深传承人、杨公文化第四十代入室弟子、金
+              锁玉关文化第四代入室弟子、龙门阴阳法派掌门人、中
+              华周易协会常务理事、孝子部落生命文化学院智库导师</div>
+          </div>
+          <div class="team-item col  a-c">
+            <img class="" src="img/team/person3.png" alt="">
+            <div class="name">王 丹</div>
+            <div class="des">团队心态训练师、中殡协教科文工作委员会秘书长、辽
+              宁省殡葬协会副秘书长、孝子部落生命文化学院副院长</div>
+          </div>
+          <div class="team-item col a-c">
+            <img class="" src="img/team/person4.png" alt="">
+            <div class="name">梁 毅</div>
+            <div class="des">殡葬行业产品研发经理、家族宝科技有限公司总经理</div>
+          </div>
+          <div class="team-item col  a-c">
+            <img class="" src="img/team/person5.png" alt="">
+            <div class="name">侯 力</div>
+            <div class="des">殡葬行业软件开发高级工程师、辽宁讣语科技有限公司
+              总经理</div>
+          </div>
+          <div class="team-item col  a-c">
+            <img class="" src="img/team/person6.png" alt="">
+            <div class="name">徐 超</div>
+            <div class="des">殡葬礼仪服务实战导师、孝善百年殡葬服务公司总经理、
+              孝子部落生命文化学院智库导师</div>
+          </div>
+        </div>
+      </div>
+      <!-- 发展历程 -->
+      <div class="position-cont row">
+        <div class="position-list col a-c">
+          <div class="EnglishName" style=" margin-top: 67px;">
+            COURSE
+          </div>
+          <div class="title row a-c j-c" style=" margin-bottom: 67px;">
+            发展历程
+          </div>
+          <div class="des">
+            孝子部落的前身是福灵益公司，在殡葬行业经营了十九年，一直在做殡葬产品的采购平台，总结行业问题如下：
+          </div>
+          <div class="des">
+            殡葬商家缺客源；没有品牌意识；团队不好管理，员工培训好以后自谋生路。
+            我们成立孝子部落集团，综合生命文化学院、赋予爱的亲人尽孝服务平台、家族宝文化系列产品，通过教育提高服务能力，和员工忠诚度；通过软件提高获客能力；通过产品提高店面核心竞争力；
+          </div>
 
+        </div>
+        <img class="position-img" src="img/team/banner.png" alt="">
+      </div>
+      <!--成就  -->
+      <div class="mid-word">通过我们2年的努力，帮助100余家殡葬公司客源增加了30%，好评率提升了50%，有50余家原来都是普通的小店，现在做到了地区的第一名；
+        孝子部落提出殡葬行业将来的利润不再是花圈、骨灰盒，而是来宾的跨界服务，所以我们提出了殡葬行业众创共享服务平台，帮助赋能殡葬商家，提升服务品质、资源对接、及获客能力。</div>
+      <img class="mid-img" src="img/team/bg.png" alt="">
+      <!--资质荣誉  -->
+      <div class="honor-wrap col a-c">
+        <div class="EnglishName" style=" margin-top: 53px;">
+          HONOR OF QUALIFICATION
+        </div>
+        <div class="title row a-c j-c">
+          资质荣誉
+        </div>
+        <!-- 轮播公共部分 -->
+        <div class="swiper-container" id="swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="swiper-img" src="img/team/banner1.png" alt=""></div>
+            <div class="swiper-slide"><img class="swiper-img" src="img/team/banner2.png" alt=""></div>
+            <div class="swiper-slide"><img class="swiper-img" src="img/team/banner3.png" alt=""></div>
+            <div class="swiper-slide"><img class="swiper-img" src="img/team/banner4.png" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <iframe src="./footer.html" style="width: 100%;height: 466px; " scrolling="no"></iframe>
+  </div>
+  <script src="js/jquery-1.8.2.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/title.js"></script>
+  <script>
+    // 顶部导航栏滑动
+    $(document).ready(function () {
+      var mySwiper = new Swiper('#swiper1', {
+        loop: true,
+        autoplay: true,
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      })
+
+    });
   </script>
 </body>
 

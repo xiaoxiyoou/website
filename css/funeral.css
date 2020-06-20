@@ -1,0 +1,93 @@
+.funeral-wrap {
+    width: 1200px;
+    /* margin-bottom: 100px; */
+}
+
+.funeral-cont {
+    width: 100%;
+    background-color: #ebebe9;
+}
+
+.funeral-list {
+    width: 100%;
+    margin-top: 86px;
+    margin-bottom: 74px;
+}
+
+.englishName {
+    color: #b3b3a0;
+    font-size: 20px;
+    margin-top: 35px;
+
+}
+
+.title {
+    width: 365px;
+    height: 75px;
+    border: 2px solid #888886;
+    color: #2c3d4e;
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.funeral-img {
+    margin-bottom: 38px;
+    width: 109.6px
+}
+
+.funeral-text {
+    color: #192548;
+    font-size: 16px;
+}
+
+.mideg-title {
+    color: #888886;
+    font-size: 18px;
+    margin-top: 108px;
+    width: 100%;
+    text-align: left;
+}
+
+.mid-title {
+    color: #2c3d4e;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+
+}
+
+.solution-list {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 104px;
+}
+
+.solution-item {
+    width: 391px;
+    background-color: #ffffff;
+    height: 308px;
+    margin-top: 22px;
+    border: 1px solid #cbcbcb;
+    margin-right: 9px;
+}
+
+.solution-item>img {
+    width: 100%;
+}
+
+.solution-item>.name {
+    text-align: center;
+    color: #313131;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+
+
+.solution-item>.des {
+    color: #313131;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 27px;
+}
