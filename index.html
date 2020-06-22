@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/swiper.min.css" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/reset.css" />
 </head>
 
@@ -24,37 +25,39 @@
       <div class="swiper-pagination"></div>
     </div>
     <!-- 顶部导航栏 -->
-    <ul class="MenuIndex">
-      <li class="MenuIndex-goods-list">
-        <a class="MenuIndex-title" href="">HOME</a>
-      </li>
-      <li class="MenuIndex-goods-list">
-        <a class="MenuIndex-title" href="./introduce.html">关于我们</a>
-      </li>
-      <li class="MenuIndex-goods-list">
-        <a class="MenuIndex-title" href="./funeral.html">解决方案</a>
-      </li>
-      <li class="MenuIndex-goods-list">
-        <a class="MenuIndex-title" href="">品牌产品</a>
-      </li>
-      <li class="MenuIndex-goods-list">
-        <a class="MenuIndex-title" href="">服务体系</a>
-      </li>
-      <img class="logo" src="./img/index/LOGO.png">
-      <li class="MenuIndex-goods-list">
-        <a class="MenuIndex-title" href="">新闻中心</a>
-      </li>
-      <li class="MenuIndex-goods-list">
-        <a class="MenuIndex-title" href="">常见问题</a>
-      </li>
-      <li class="MenuIndex-goods-list">
-        <a class="MenuIndex-title" href="#sociology">社会责任</a>
-      </li>
-      <li class="MenuIndex-goods-list">
-        <a class="MenuIndex-title" href="">加入我们</a>
-      </li>
-      <img class="search" src="./img/index/search.png">
-    </ul>
+    <div class="MenuIndex-list">
+      <ul class="MenuIndex">
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title MenuIndexHover" href="">HOME</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="./introduce.html">关于我们</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="./funeralService.html">解决方案</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="">品牌产品</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="">服务体系</a>
+        </li>
+        <img class="logo" src="./img/index/LOGO.png">
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="">新闻中心</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="">常见问题</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="#sociology">社会责任</a>
+        </li>
+        <li class="MenuIndex-goods-list">
+          <a class="MenuIndex-title" href="">加入我们</a>
+        </li>
+        <img class="search" src="./img/index/search.png">
+      </ul>
+    </div>
     <!-- 品牌产品 -->
     <div class="brand-wrapper col a-c">
       <div class="brand-title row a-c j-c">
@@ -65,7 +68,9 @@
       <div class="line">brand name products</div>
       <div class="content row j-c">
         <div class="item col a-c">
-          <img class="brandImg" src="img/index/brand1.png" alt="">
+          <div class="brandImg-wrap">
+            <img class="brandImg " src="img/index/brand1.png" alt="">
+          </div>
           <div class="name">赋予爱的亲人尽孝服务平台</div>
           <div class="des">一站搞定全年的福利采购、仓储、物流、客服，后顾无忧。一站搞定全年的福利采购、仓储、物流、客服，后顾无忧</div>
           <div class="more row a-c j-c">查看更多</div>
@@ -74,10 +79,14 @@
           <div class="more row a-c j-c">查看更多</div>
           <div class="name">家族宝系列产品</div>
           <div class="des">一站搞定全年的福利采购、仓储、物流、客服，后顾无忧。一站搞定全年的福利采购、仓储、物流、客服，后顾无忧</div>
-          <img class="brandImg" src="img/index/brand2.png" alt="">
+          <div class="brandImg-wrap">
+            <img class="brandImg" src="img/index/brand2.png" alt="">
+          </div>
         </div>
         <div class="item col a-c">
-          <img class="brandImg" src="img/index/brand3.png" alt="">
+          <div class="brandImg-wrap">
+            <img class="brandImg" src="img/index/brand3.png" alt="">
+          </div>
           <div class="name">孝子部落商学院</div>
           <div class="des">一站搞定全年的福利采购、仓储、物流、客服，后顾无忧。一站搞定全年的福利采购、仓储、物流、客服，后顾无忧</div>
           <div class="more row a-c j-c">查看更多</div>
@@ -171,12 +180,16 @@
       })
       // 顶部特效
       $(".MenuIndex-title").mouseover(function () {
-        $(this).addClass('MenuIndexHover')
+        $(".MenuIndex-title").removeClass("MenuIndexHover");
+        $(this).addClass("MenuIndexHover");
       });
+      // $(".MenuIndex-title").mouseover(function () {
+      //   $(this).addClass('MenuIndexHover')
+      // });
 
-      $(".MenuIndex-title").mouseout(function () {
-        $(this).removeClass('MenuIndexHover')
-      });
+      // $(".MenuIndex-title").mouseout(function () {
+      //   $(this).removeClass('MenuIndexHover')
+      // });
       // 社会责任
       $(".modular1").mouseover(function () {
         $(this).attr("src", "img/index/modular1-hover.png");
@@ -230,6 +243,17 @@
         return false;
 
       });
+      // 顶部滚动变色
+      // $(window).scroll(function () {
+      //   console.log('执行')
+      //   if ($(this).scrollTop() < 30) {
+      //      $(".MenuIndex-list").css("background-color", "rgba(0,0,0,0)")
+      //      $(".MenuIndex-list").css("position", "absolute")
+      //   } else {
+      //      $(".MenuIndex-list").css("background-color", "#c4a064")
+      //      $(".MenuIndex-list").css("position", "fixed")
+      //   }
+      // });
     });
   </script>
 </body>

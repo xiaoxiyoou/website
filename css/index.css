@@ -1,5 +1,3 @@
-
-
 /* 轮播 */
 .swiper-container {
     width: 100%;
@@ -14,6 +12,7 @@
 }
 
 /* 导航栏 */
+
 
 
 .header {
@@ -35,11 +34,30 @@
     margin: 100px auto 0;
 }
 
-.MenuIndex {
+.MenuIndex-cont {
+    width: 100%;
+    min-width: 1140px;
+    background-color: #fff;
+    border-bottom: 1px solid #000000;
+}
+
+.MenuIndex-list {
+
+    width: 100%;
+    margin: 0 auto;
     position: absolute;
+    height: 122px;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin-top: 25px;
+}
+
+.MenuIndex {
     width: 1200px;
-    margin: 125px auto -30px;
+    margin: 0px auto -30px;
     z-index: 5;
+    height: 122px;
 }
 
 .MenuIndex li {
@@ -49,29 +67,32 @@
     position: relative;
     text-align: center;
     height: 38px;
-    margin: 0 28px;
+    width: 115px;
 }
-.MenuIndexHover{
-    color: #c4a064!important;
-    border-bottom: 2px solid #c4a064;
+
+.MenuIndexHover {
+    color: #c4a064 !important;
 }
+
 .MenuIndex li a.MenuIndex-title {
     color: #ffffff;
     display: block;
     height: 20px;
     padding-bottom: 20px;
     font-size: 15px;
+    margin-top: 56px;
 }
 
 .logo {
     float: left;
-    margin-top: -64px;
+    margin-top: 11px;
 }
 
 .search {
     position: relative;
     left: 1px;
     width: 19px;
+    margin-top: 56px;
     float: left;
     height: 19px;
 }
@@ -100,9 +121,9 @@
     font-size: 18px;
     margin-top: 0.5%;
 }
-.brand-wrapper{
 
-}
+.brand-wrapper {}
+
 .brand-wrapper>.content {
     margin-top: 4%;
     width: 1200px;
@@ -112,13 +133,27 @@
 
 .brand-wrapper>.content>.item {
     width: 29%;
+    overflow: hidden;
 
 }
-
-.brand-wrapper>.content>.item>.brandImg {
+.brand-wrapper>.content>.item>.brandImg-wrap{
     width: 100%;
+    height: 246px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.brand-wrapper>.content>.item>.brandImg-wrap>.brandImg {
+    width: 100%;
+    transition: all 1s;
+   
 
 }
+
+.brand-wrapper>.content>.item>.brandImg-wrap>.brandImg:hover {
+    transform: scale(1.08);
+}
+
 
 .brand-wrapper>.content>.item>.name {
     color: #212121;
@@ -166,7 +201,7 @@
 .sociology-wrapper>.sociology-title {
     margin: 0 auto;
     width: 100%;
-    margin-top:4%;
+    margin-top: 4%;
 }
 
 .sociology-wrapper>.sociology-title>.name {
@@ -180,11 +215,12 @@
     margin-top: 5%;
 }
 
-.sociology-wrapper>.content>.sociologyImg {
+.sociologyImg {
     margin: 0 2.5%;
-    width: 12%;
+    width: 90%;
 }
-.sociologyText{
+
+.sociologyText {
     color: #ffffff;
     font-size: 15px;
     margin-top: 20px;
@@ -216,7 +252,7 @@
 
 .news-wrapper>.content {
     margin: 50px auto 0;
-    width:1200px;
+    width: 1200px;
     height: 100%;
 }
 
@@ -265,4 +301,3 @@
     visibility: hidden;
     content: " ";
 }
-

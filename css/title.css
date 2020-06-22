@@ -39,7 +39,7 @@
     border-bottom: 1px solid #000000;
 }
 .MenuIndex-list{
-  
+    transition: all 1s;
     width: 100%;
     background-color: #e6e6e6;
     margin:  0 auto;
@@ -51,7 +51,6 @@
 }
 
 .MenuIndex {
-    background-color: #e6e6e6;
     width: 1200px;
     margin: 0px auto -30px;
     z-index: 5;
@@ -70,7 +69,7 @@
 .MenuIndexHover{
     color: #c4a064!important;
 }
-.MenuIndex li a.MenuIndex-title {
+.MenuIndex li .MenuIndex-title {
     color: #192548;
     display: block;
     height: 20px;

@@ -19,14 +19,12 @@
          el: '.swiper-scrollbar',
        },
      })
-     // 顶部特效
+     //  顶部特效
      $(".MenuIndex-title").mouseover(function () {
-       $(this).addClass('MenuIndexHover')
+       $(".MenuIndex-title").removeClass("MenuIndexHover");
+       $(this).addClass("MenuIndexHover");
      });
 
-     $(".MenuIndex-title").mouseout(function () {
-       $(this).removeClass('MenuIndexHover')
-     });
      // 下拉特效
      $(".about-item").mouseover(function () {
        $(this).addClass('about-item-hover')
@@ -69,6 +67,27 @@
      $('body,html').animate({
        scrollTop: $('#title').offset().top - 122 + "px"
      }, 500);
+
+     //  导航显示与隐藏
+     var p = 0;
+     var t = 0;
+     var a = 1;
+     $(window).scroll(function (e) {
+       p = $(this).scrollTop();
+       if (t <= p) { //下滚  
+         if (a != 1) {
+            $(".MenuIndex-list").css("display", "none")
+         } else {
+           setTimeout(function () {
+             a++
+           }, 600);
+         }
+       } else { //上滚  
+          $(".MenuIndex-list").css("display", "block")
+
+       }
+       t = p;; //更新上一次scrollTop的值      
+     });
 
 
 
