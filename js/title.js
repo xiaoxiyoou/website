@@ -63,6 +63,21 @@
          $(this).css("visibility", "hidden");
        }
      );
+    //  新闻中心
+    $(".news").mouseover(function () {
+      $("#news").css('visibility', 'visible')
+    })
+    $(".news").mouseout(function () {
+      $("#news").css('visibility', 'hidden')
+    })
+    $("#news").hover(
+      function () {
+        $(this).css("visibility", "visible");
+      },
+      function () {
+        $(this).css("visibility", "hidden");
+      }
+    );
      // 顶部导航栏滑动
      $('body,html').animate({
        scrollTop: $('#title').offset().top - 122 + "px"

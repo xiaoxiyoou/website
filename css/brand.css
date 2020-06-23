@@ -1,0 +1,18 @@
+.swiper-container {
+    width: 1200px;
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    margin-top: 122px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #c4a064;
+}
+.section{
+}
+.MenuIndex li{
+    width: 125px!important;
+}

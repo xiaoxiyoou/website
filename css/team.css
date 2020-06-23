@@ -21,7 +21,9 @@
     height: 334px;
     margin-top: 22px;
 }
-
+.team-item:hover{
+    box-shadow: 1px 1px 10px #888888;
+}
 .team-item>.name {
     text-align: center;
     color: #000000;

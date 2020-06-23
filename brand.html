@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>品牌产品</title>
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/brand.css" />
+  <link rel="stylesheet" href="css/title.css" />
+  <!-- <link rel="stylesheet" href="css/swiper.min.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">  
+  <link rel="stylesheet" href="css/fullpage.min.css" />
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <div class="MenuIndex-list">
+    <ul class="MenuIndex">
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="./index.html">HOME</a>
+      </li>
+      <li class="MenuIndex-goods-list">
+        <div class="MenuIndex-title about ">关于我们</div>
+        <!-- 下拉栏 -->
+        <div class="about-wrap col j-c a-c" id="about">
+          <img class="about-img" src="img/title/triangle.png" alt="">
+          <div class="about-cont">
+            <div class="about-item row a-c j-c"><a href="./introduce.html">集团介绍</a></div>
+            <div class="about-item row a-c j-c"><a href="./team.html">团队介绍</a></div>
+            <div class="about-item row a-c j-c"><a href="./position.html">集团定位</a></div>
+            <div class="about-item row a-c j-c"><a href="./contact.html">联系我们</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="MenuIndex-goods-list solution ">
+        <div class="MenuIndex-title ">解决方案</div>
+        <!-- 下拉栏 -->
+        <div class="about-wrap col j-c a-c" id="solution">
+          <img class="about-img" src="img/title/triangle.png" alt="">
+          <div class="about-cont">
+            <div class="about-item row a-c j-c"><a href="./funeralService.html">殡仪服务</a></div>
+            <div class="about-item row a-c j-c"><a href="./funeral.html">殡仪馆</a></div>
+            <div class="about-item row a-c j-c"><a href="./cemetery.html">陵园墓园</a></div>
+            <div class="about-item row a-c j-c"><a href="./manufactor.html">生产厂家</a></div>
+          </div>
+        </div>
+      </li>
+      <!-- <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">品牌产品</a>
+      </li> -->
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">服务体系</a>
+      </li>
+      <img class="logo" src="./img/introduce/LOGO.png">
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">新闻中心</a>
+      </li>
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">常见问题</a>
+      </li>
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">社会责任</a>
+      </li>
+      <li class="MenuIndex-goods-list">
+        <a class="MenuIndex-title" href="">加入我们</a>
+      </li>
+    </ul>
+  </div>
+  <div id="title"></div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img class="banner" src="img/brand/banner1.png" alt=""></div>
+      <div class="swiper-slide"><img class="banner" src="img/brand/banner2.png" alt=""></div>
+      <div class="swiper-slide"><img class="banner" src="img/brand/banner3.png" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <script src="js/jquery-1.8.2.js"></script>
+  <!-- <script src="js/swiper.min.js"></script> -->
+  <script src="js/title.js"></script>
+  <!-- <script src="js/fullpage.min.js"></script> -->
+  <script src="https://unpkg.com/swiper/js/swiper.js"> </script>
+  <script>
+ 
+    var mySwiper = new Swiper('.swiper-container', {
+      direction: 'vertical', // 垂直切换选项
+      loop: true, // 循环模式选项
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // 如果需要前进后退按钮
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
+
+      // 如果需要滚动条
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    })
+  </script>
+</body>
+
+</html>
